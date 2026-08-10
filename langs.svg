@@ -1,0 +1,46 @@
+<svg width="480" height="220" viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#160a20"/><stop offset="100%" stop-color="#241033"/>
+</linearGradient>
+<style>
+.card { opacity:0; animation: cardIn .6s ease-out forwards; }
+@keyframes cardIn { 0%{opacity:0; transform:translateY(10px);} 100%{opacity:1; transform:translateY(0);} }
+.langBar { width:0; animation-name: barGrow; animation-duration: 1s; animation-timing-function: cubic-bezier(.25,.85,.3,1); animation-fill-mode:forwards; }
+@keyframes barGrow { 0%{width:0;} 100%{width:var(--bw);} }
+</style>
+</defs>
+<rect x="1" y="1" width="478" height="218" rx="16" fill="url(#bgG)" stroke="#7a3ea8" stroke-width="1.2" class="card"/>
+<text x="24" y="32" font-family="'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#f3e8ff" class="card">Most Used Languages</text>
+<g transform="translate(24,60)"><g transform="translate(0,0)">
+<text x="0" y="0" font-family="'Segoe UI',sans-serif" font-size="12.5" fill="#c9a8e0">JavaScript</text>
+<text x="334" y="0" text-anchor="end" font-family="'Fira Code',monospace" font-size="12" fill="#f3e8ff">32%</text>
+<rect x="0" y="6" width="300" height="7" rx="3.5" fill="#241033"/>
+<rect x="0" y="6" height="7" rx="3.5" fill="#f0db4f" class="langBar" style="--bw:96.0px; animation-delay:0.40s;"/>
+</g><g transform="translate(0,26)">
+<text x="0" y="0" font-family="'Segoe UI',sans-serif" font-size="12.5" fill="#c9a8e0">Python</text>
+<text x="334" y="0" text-anchor="end" font-family="'Fira Code',monospace" font-size="12" fill="#f3e8ff">26%</text>
+<rect x="0" y="6" width="300" height="7" rx="3.5" fill="#241033"/>
+<rect x="0" y="6" height="7" rx="3.5" fill="#ffd43b" class="langBar" style="--bw:78.0px; animation-delay:0.55s;"/>
+</g><g transform="translate(0,52)">
+<text x="0" y="0" font-family="'Segoe UI',sans-serif" font-size="12.5" fill="#c9a8e0">HTML/CSS</text>
+<text x="334" y="0" text-anchor="end" font-family="'Fira Code',monospace" font-size="12" fill="#f3e8ff">18%</text>
+<rect x="0" y="6" width="300" height="7" rx="3.5" fill="#241033"/>
+<rect x="0" y="6" height="7" rx="3.5" fill="#e34f26" class="langBar" style="--bw:54.0px; animation-delay:0.70s;"/>
+</g><g transform="translate(0,78)">
+<text x="0" y="0" font-family="'Segoe UI',sans-serif" font-size="12.5" fill="#c9a8e0">Solidity</text>
+<text x="334" y="0" text-anchor="end" font-family="'Fira Code',monospace" font-size="12" fill="#f3e8ff">12%</text>
+<rect x="0" y="6" width="300" height="7" rx="3.5" fill="#241033"/>
+<rect x="0" y="6" height="7" rx="3.5" fill="#8a92b2" class="langBar" style="--bw:36.0px; animation-delay:0.85s;"/>
+</g><g transform="translate(0,104)">
+<text x="0" y="0" font-family="'Segoe UI',sans-serif" font-size="12.5" fill="#c9a8e0">C++</text>
+<text x="334" y="0" text-anchor="end" font-family="'Fira Code',monospace" font-size="12" fill="#f3e8ff">8%</text>
+<rect x="0" y="6" width="300" height="7" rx="3.5" fill="#241033"/>
+<rect x="0" y="6" height="7" rx="3.5" fill="#00599c" class="langBar" style="--bw:24.0px; animation-delay:1.00s;"/>
+</g><g transform="translate(0,130)">
+<text x="0" y="0" font-family="'Segoe UI',sans-serif" font-size="12.5" fill="#c9a8e0">Other</text>
+<text x="334" y="0" text-anchor="end" font-family="'Fira Code',monospace" font-size="12" fill="#f3e8ff">4%</text>
+<rect x="0" y="6" width="300" height="7" rx="3.5" fill="#241033"/>
+<rect x="0" y="6" height="7" rx="3.5" fill="#a984c9" class="langBar" style="--bw:12.0px; animation-delay:1.15s;"/>
+</g></g>
+</svg>

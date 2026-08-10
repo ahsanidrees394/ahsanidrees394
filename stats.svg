@@ -1,0 +1,40 @@
+<svg width="480" height="200" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#160a20"/><stop offset="100%" stop-color="#241033"/>
+</linearGradient>
+<style>
+.card { animation: cardIn .6s ease-out forwards; opacity:0; }
+@keyframes cardIn { 0%{opacity:0; transform:translateY(10px);} 100%{opacity:1; transform:translateY(0);} }
+.statRow { opacity:0; animation-name: rowIn; animation-duration:.55s; animation-timing-function:ease-out; animation-fill-mode:forwards; }
+@keyframes rowIn { 0%{opacity:0; transform:translateX(-14px);} 100%{opacity:1; transform:translateX(0);} }
+.rankRing { stroke-dasharray:263.9; stroke-dashoffset:263.9; animation: ringFill 1.4s cubic-bezier(.3,.8,.2,1) .3s forwards; }
+@keyframes ringFill { to { stroke-dashoffset:36.9; } }
+.rankTxt { opacity:0; animation: rowIn .6s ease-out 1.2s forwards; }
+</style>
+</defs>
+<rect x="1" y="1" width="478" height="198" rx="16" fill="url(#bgG)" stroke="#7a3ea8" stroke-width="1.2" class="card"/>
+<text x="24" y="34" font-family="'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#f3e8ff" class="card">Ahsan's GitHub Stats</text>
+<g transform="translate(40,70)"><g class="statRow" style="animation-delay:0.50s;" transform="translate(0,0)">
+<circle cx="5" cy="-4" r="4" fill="#ffd76b"/>
+<text x="16" y="0" font-family="'Segoe UI',sans-serif" font-size="13.5" fill="#c9a8e0">Total Stars:</text>
+<text x="210" y="0" font-family="'Fira Code',monospace" font-size="13.5" font-weight="700" fill="#f3e8ff">128</text>
+</g><g class="statRow" style="animation-delay:0.68s;" transform="translate(0,32)">
+<circle cx="5" cy="-4" r="4" fill="#7fd8ff"/>
+<text x="16" y="0" font-family="'Segoe UI',sans-serif" font-size="13.5" fill="#c9a8e0">Total Commits:</text>
+<text x="210" y="0" font-family="'Fira Code',monospace" font-size="13.5" font-weight="700" fill="#f3e8ff">640</text>
+</g><g class="statRow" style="animation-delay:0.86s;" transform="translate(0,64)">
+<circle cx="5" cy="-4" r="4" fill="#ff8bf0"/>
+<text x="16" y="0" font-family="'Segoe UI',sans-serif" font-size="13.5" fill="#c9a8e0">Total PRs:</text>
+<text x="210" y="0" font-family="'Fira Code',monospace" font-size="13.5" font-weight="700" fill="#f3e8ff">34</text>
+</g><g class="statRow" style="animation-delay:1.04s;" transform="translate(0,96)">
+<circle cx="5" cy="-4" r="4" fill="#9dffb0"/>
+<text x="16" y="0" font-family="'Segoe UI',sans-serif" font-size="13.5" fill="#c9a8e0">Total Issues:</text>
+<text x="210" y="0" font-family="'Fira Code',monospace" font-size="13.5" font-weight="700" fill="#f3e8ff">21</text>
+</g></g>
+<g transform="translate(380,100.0)">
+<circle r="42" fill="none" stroke="#2a1338" stroke-width="9"/>
+<circle r="42" fill="none" stroke="#ff6bd6" stroke-width="9" stroke-linecap="round" class="rankRing" transform="rotate(-90)"/>
+<text x="0" y="6" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="22" font-weight="800" fill="#f3e8ff" class="rankTxt">A+</text>
+</g>
+</svg>

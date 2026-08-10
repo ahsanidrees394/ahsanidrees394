@@ -1,0 +1,85 @@
+<svg width="760" height="200" viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#160a20"/><stop offset="100%" stop-color="#241033"/>
+</linearGradient>
+<style>
+.bgCard { opacity:0; animation: cardIn .5s ease-out forwards; }
+@keyframes cardIn { 0%{opacity:0;} 100%{opacity:1;} }
+.trophyCell { opacity:0; transform-box: fill-box; transform-origin:center; animation-name: cellPop; animation-duration:.6s; animation-timing-function: cubic-bezier(.25,.9,.3,1.25); animation-fill-mode:forwards; }
+@keyframes cellPop { 0%{opacity:0; transform:scale(.7) translateY(14px);} 100%{opacity:1; transform:scale(1) translateY(0);} }
+.cellShine { animation-name: shineMove; animation-duration:2.6s; animation-iteration-count:infinite; animation-timing-function:ease-in-out; }
+@keyframes shineMove { 0%{transform:translate(0,0) rotate(25deg); opacity:0;} 15%{opacity:1;} 55%{transform:translate(340px,0) rotate(25deg); opacity:0;} 100%{transform:translate(340px,0) rotate(25deg); opacity:0;} }
+.trophyGlow { animation: glowPulse 2.2s ease-in-out infinite; }
+@keyframes glowPulse { 0%,100%{ filter:drop-shadow(0 0 2px var(--tc)); } 50%{ filter:drop-shadow(0 0 9px var(--tc)); } }
+</style>
+</defs>
+<rect x="1" y="1" width="758" height="198" rx="16" fill="url(#bgG)" stroke="#7a3ea8" stroke-width="1.2" class="bgCard"/>
+<text x="24" y="30" font-family="'Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#f3e8ff" class="bgCard">Achievements</text>
+<g transform="translate(24,30)"><g transform="translate(0,0)" class="trophyCell" style="animation-delay:0.30s;">
+<rect x="6" y="6" width="122" height="168" rx="14" fill="#1c0f2a" stroke="#ffd76b" stroke-width="1.3"/>
+<clipPath id="cellClip0"><rect x="6" y="6" width="122" height="168" rx="14"/></clipPath>
+<g clip-path="url(#cellClip0)">
+<rect x="-140" y="-140" width="80" height="500" fill="#ffd76b" opacity="0.18" class="cellShine" style="animation-delay:1.50s;" transform="rotate(25)"/>
+</g>
+<g transform="translate(64.0,64)" class="trophyGlow" style="--tc:#ffd76b; animation-delay:0.50s;"><path d="M-14 -18 h28 v10 a14 14 0 0 1 -28 0 z" fill="none" stroke="#ffd76b" stroke-width="2.2"/>
+<path d="M-14 -14 h-8 a6 6 0 0 0 6 8" fill="none" stroke="#ffd76b" stroke-width="2"/>
+<path d="M14 -14 h8 a6 6 0 0 1 -6 8" fill="none" stroke="#ffd76b" stroke-width="2"/>
+<rect x="-3" y="1" width="6" height="8" fill="#ffd76b"/>
+<rect x="-10" y="9" width="20" height="4" rx="1.5" fill="#ffd76b"/></g>
+<text x="64.0" y="110" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12.5" font-weight="700" fill="#f3e8ff">Commit Streak</text>
+<text x="64.0" y="130" text-anchor="middle" font-family="'Fira Code',monospace" font-size="10.5" letter-spacing="1.5" fill="#ffd76b">GOLD</text>
+</g><g transform="translate(138,0)" class="trophyCell" style="animation-delay:0.46s;">
+<rect x="6" y="6" width="122" height="168" rx="14" fill="#1c0f2a" stroke="#c9d3e0" stroke-width="1.3"/>
+<clipPath id="cellClip1"><rect x="6" y="6" width="122" height="168" rx="14"/></clipPath>
+<g clip-path="url(#cellClip1)">
+<rect x="-140" y="-140" width="80" height="500" fill="#c9d3e0" opacity="0.18" class="cellShine" style="animation-delay:1.85s;" transform="rotate(25)"/>
+</g>
+<g transform="translate(64.0,64)" class="trophyGlow" style="--tc:#c9d3e0; animation-delay:0.66s;"><path d="M-14 -18 h28 v10 a14 14 0 0 1 -28 0 z" fill="none" stroke="#c9d3e0" stroke-width="2.2"/>
+<path d="M-14 -14 h-8 a6 6 0 0 0 6 8" fill="none" stroke="#c9d3e0" stroke-width="2"/>
+<path d="M14 -14 h8 a6 6 0 0 1 -6 8" fill="none" stroke="#c9d3e0" stroke-width="2"/>
+<rect x="-3" y="1" width="6" height="8" fill="#c9d3e0"/>
+<rect x="-10" y="9" width="20" height="4" rx="1.5" fill="#c9d3e0"/></g>
+<text x="64.0" y="110" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12.5" font-weight="700" fill="#f3e8ff">Pull Shark</text>
+<text x="64.0" y="130" text-anchor="middle" font-family="'Fira Code',monospace" font-size="10.5" letter-spacing="1.5" fill="#c9d3e0">SILVER</text>
+</g><g transform="translate(276,0)" class="trophyCell" style="animation-delay:0.62s;">
+<rect x="6" y="6" width="122" height="168" rx="14" fill="#1c0f2a" stroke="#e0a868" stroke-width="1.3"/>
+<clipPath id="cellClip2"><rect x="6" y="6" width="122" height="168" rx="14"/></clipPath>
+<g clip-path="url(#cellClip2)">
+<rect x="-140" y="-140" width="80" height="500" fill="#e0a868" opacity="0.18" class="cellShine" style="animation-delay:2.20s;" transform="rotate(25)"/>
+</g>
+<g transform="translate(64.0,64)" class="trophyGlow" style="--tc:#e0a868; animation-delay:0.82s;"><path d="M-14 -18 h28 v10 a14 14 0 0 1 -28 0 z" fill="none" stroke="#e0a868" stroke-width="2.2"/>
+<path d="M-14 -14 h-8 a6 6 0 0 0 6 8" fill="none" stroke="#e0a868" stroke-width="2"/>
+<path d="M14 -14 h8 a6 6 0 0 1 -6 8" fill="none" stroke="#e0a868" stroke-width="2"/>
+<rect x="-3" y="1" width="6" height="8" fill="#e0a868"/>
+<rect x="-10" y="9" width="20" height="4" rx="1.5" fill="#e0a868"/></g>
+<text x="64.0" y="110" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12.5" font-weight="700" fill="#f3e8ff">Quickdraw</text>
+<text x="64.0" y="130" text-anchor="middle" font-family="'Fira Code',monospace" font-size="10.5" letter-spacing="1.5" fill="#e0a868">BRONZE</text>
+</g><g transform="translate(414,0)" class="trophyCell" style="animation-delay:0.78s;">
+<rect x="6" y="6" width="122" height="168" rx="14" fill="#1c0f2a" stroke="#ffd76b" stroke-width="1.3"/>
+<clipPath id="cellClip3"><rect x="6" y="6" width="122" height="168" rx="14"/></clipPath>
+<g clip-path="url(#cellClip3)">
+<rect x="-140" y="-140" width="80" height="500" fill="#ffd76b" opacity="0.18" class="cellShine" style="animation-delay:2.55s;" transform="rotate(25)"/>
+</g>
+<g transform="translate(64.0,64)" class="trophyGlow" style="--tc:#ffd76b; animation-delay:0.98s;"><path d="M-14 -18 h28 v10 a14 14 0 0 1 -28 0 z" fill="none" stroke="#ffd76b" stroke-width="2.2"/>
+<path d="M-14 -14 h-8 a6 6 0 0 0 6 8" fill="none" stroke="#ffd76b" stroke-width="2"/>
+<path d="M14 -14 h8 a6 6 0 0 1 -6 8" fill="none" stroke="#ffd76b" stroke-width="2"/>
+<rect x="-3" y="1" width="6" height="8" fill="#ffd76b"/>
+<rect x="-10" y="9" width="20" height="4" rx="1.5" fill="#ffd76b"/></g>
+<text x="64.0" y="110" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12.5" font-weight="700" fill="#f3e8ff">Deep Diver</text>
+<text x="64.0" y="130" text-anchor="middle" font-family="'Fira Code',monospace" font-size="10.5" letter-spacing="1.5" fill="#ffd76b">GOLD</text>
+</g><g transform="translate(552,0)" class="trophyCell" style="animation-delay:0.94s;">
+<rect x="6" y="6" width="122" height="168" rx="14" fill="#1c0f2a" stroke="#c9d3e0" stroke-width="1.3"/>
+<clipPath id="cellClip4"><rect x="6" y="6" width="122" height="168" rx="14"/></clipPath>
+<g clip-path="url(#cellClip4)">
+<rect x="-140" y="-140" width="80" height="500" fill="#c9d3e0" opacity="0.18" class="cellShine" style="animation-delay:2.90s;" transform="rotate(25)"/>
+</g>
+<g transform="translate(64.0,64)" class="trophyGlow" style="--tc:#c9d3e0; animation-delay:1.14s;"><path d="M-14 -18 h28 v10 a14 14 0 0 1 -28 0 z" fill="none" stroke="#c9d3e0" stroke-width="2.2"/>
+<path d="M-14 -14 h-8 a6 6 0 0 0 6 8" fill="none" stroke="#c9d3e0" stroke-width="2"/>
+<path d="M14 -14 h8 a6 6 0 0 1 -6 8" fill="none" stroke="#c9d3e0" stroke-width="2"/>
+<rect x="-3" y="1" width="6" height="8" fill="#c9d3e0"/>
+<rect x="-10" y="9" width="20" height="4" rx="1.5" fill="#c9d3e0"/></g>
+<text x="64.0" y="110" text-anchor="middle" font-family="'Segoe UI',sans-serif" font-size="12.5" font-weight="700" fill="#f3e8ff">Early Bird</text>
+<text x="64.0" y="130" text-anchor="middle" font-family="'Fira Code',monospace" font-size="10.5" letter-spacing="1.5" fill="#c9d3e0">SILVER</text>
+</g></g>
+</svg>
